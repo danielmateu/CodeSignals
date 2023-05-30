@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeSignals</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="mx-auto p-5">
+    <h1>Century From Year</h1>
+
+    <p>
+        Given a year, return the century it is in. The first century spans from the
+        year 1 up to and including the year 100, the second - from the year 101 up
+        to and including the year 200, etc.
+    </p>
+
+    <p>
+        <strong>Example</strong>
+    </p>
+
+    <ul>
+        <li>
+            For <code>year = 1905</code>, the output should be
+            <code>centuryFromYear(year) = 20</code>;
+        </li>
+        <li>
+            For <code>year = 1700</code>, the output should be
+            <code>centuryFromYear(year) = 17</code>.
+        </li>
+    </ul>
+
+    <p>
+        <strong>Input/Output</strong>
+    </p>
+
+    <ul>
+        <li>
+            <strong>[execution time limit] 4 seconds (js)</strong>
+        </li>
+
+        <li>
+            <strong>[input] integer year</strong>
+            <br />
+            A positive integer, designating the year.
+            <br />
+            <em>Guaranteed constraints:</em>
+            <code>1 ≤ year ≤ 2005</code>.
+        </li>
+
+        <li>
+            <strong>[output] integer</strong>
+            <br />
+            The number of the century the year is in.
+        </li>
+
+        <li>
+            <strong>[JavaScript (ES6)] Syntax Tips</strong>
+            <br />
+            <em>#Prints help message to the console</em>
+            <br />
+            <code>#Returns a string</code>
+            <br />
+            <code>return "hello: " + name</code>;
+            <br />
+            <em>#Returns an integer</em>
+            <br />
+            <code>return parseInt(str);</code>
+        </li>
+
+    </ul>
+
+    <h2>Solution</h2>
+
+    <p>
+        <strong>JavaScript (ES6)</strong>
+
+    <pre>
+            <code>
+            function centuryFromYear(year) {
+                return Math.ceil(year / 100);
+            }
+            </code> 
+
+        </pre>
+    </p>
+    <form action="">
+        
+        <input 
+            type="text"
+            class="form-control form-control-lg mt-5 d-block mx-auto text-center w-25"
+            id="input" 
+            placeholder="Enter a year"  
+            name="input"
+        />
+
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+
+
+
+    <script src="./exercises/centuryFromYear.js"></script>
+</body>
+
+</html>
