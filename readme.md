@@ -1,0 +1,1 @@
+Serie de ejercicios de lógica de programación de la plataforma CodeSignal, realizados para refrescar conceptos
