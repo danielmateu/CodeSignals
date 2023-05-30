@@ -36,7 +36,7 @@ function reverseInParentheses(inputString) {
     return result;
 }
 
-// console.log(solution('(bar)')); // rab
+console.log(reverseInParentheses('(bar)')); // rab
 console.log(reverseInParentheses('foo(bar(baz))blim')); // foobazrabblim
-// console.log(solution('foo(bar)baz(blim)')); // foorabbazmilb
+console.log(reverseInParentheses('foo(bar)baz(blim)')); // foorabbazmilb
 // foobazrabblim
