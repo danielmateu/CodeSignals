@@ -26,3 +26,7 @@ const areEquallyStrong = (yourLeft, yourRight, friendsLeft, friendsRight) => {
 
     return false;
 }
+
+console.log(areEquallyStrong(10, 15, 15, 10)); // true
+console.log(areEquallyStrong(15, 10, 15, 10)); // true
+console.log(areEquallyStrong(15, 10, 15, 9)); // false
